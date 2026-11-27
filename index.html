@@ -58,9 +58,23 @@ select{border:1.5px solid var(--line);border-radius:999px;padding:10px 16px;font
 .cta{text-align:center;margin-top:40px}.cta a{display:inline-block;background:var(--y);color:var(--n);font-weight:800;padding:15px 28px;border-radius:12px}
 footer{background:#00142F;color:rgba(255,255,255,.7);font-size:14px}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;padding:26px 24px}footer a{color:var(--y)}
 @media(max-width:1000px){.grid{grid-template-columns:1fr 1fr}.pro ul,.hs{grid-template-columns:1fr 1fr}}
-@media(max-width:640px){.grid,.pro ul,.hs{grid-template-columns:1fr}.hb span{display:none}.fil{flex-direction:column;align-items:stretch}.fbs{overflow-x:auto;flex-wrap:nowrap;padding-bottom:4px}.fb{white-space:nowrap}.hero{padding:50px 0 100px}}
+html,body{overflow-x:hidden}
+.hb{white-space:nowrap}
+@media(max-width:640px){
+ .grid,.pro ul,.hs{grid-template-columns:1fr}
+ header .wrap{height:62px;padding:0 16px}
+ .brand{font-size:16px;gap:7px}.pin{width:28px;height:28px}
+ .hb{padding:9px 13px;font-size:13.5px}.hb span{display:none}
+ .fil{display:block;padding:14px}
+ .fbs{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+ .fb{padding:10px 8px;font-size:13.5px;line-height:1.25;white-space:normal}
+ select{width:100%;margin-top:10px;border-radius:12px}
+ .hero{padding:44px 0 96px}.hero p{font-size:16.5px}
+ .hi{flex-direction:column;align-items:center;gap:8px}
+ .pro{padding:24px 18px}
+}
 </style></head><body>
-<header><div class="wrap"><a class="brand" href="https://digital.ecuaconsulta.com/"><svg class="pin" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"><path d="M60 6a42 42 0 0 1 42 42c0 29-33 59-39.4 64.6a4 4 0 0 1-5.2 0C51 107 18 77 18 48A42 42 0 0 1 60 6Z" fill="#F4C430"/><circle cx="60" cy="48" r="29" fill="#FFFFFF"/><rect x="42" y="48" width="10" height="15" rx="2" fill="#011F47"/><rect x="55.5" y="41" width="10" height="22" rx="2" fill="#011F47"/><rect x="69" y="33" width="10" height="30" rx="2" fill="#011F47"/></svg>EcuaConsulta&nbsp;<span>Digital</span></a><a class="hb" href="#" data-wa="Hola, quiero una página web para mi negocio">Quiero mi página<span> web</span></a></div></header>
+<header><div class="wrap"><a class="brand" href="https://digital.ecuaconsulta.com/"><svg class="pin" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"><path d="M60 6a42 42 0 0 1 42 42c0 29-33 59-39.4 64.6a4 4 0 0 1-5.2 0C51 107 18 77 18 48A42 42 0 0 1 60 6Z" fill="#F4C430"/><circle cx="60" cy="48" r="29" fill="#FFFFFF"/><rect x="42" y="48" width="10" height="15" rx="2" fill="#011F47"/><rect x="55.5" y="41" width="10" height="22" rx="2" fill="#011F47"/><rect x="69" y="33" width="10" height="30" rx="2" fill="#011F47"/></svg>EcuaConsulta&nbsp;<span>Digital</span></a><a class="hb" href="#" data-wa="Hola, quiero una página web para mi negocio">Quiero mi<span> página</span> web</a></div></header>
 <section class="hero"><div class="wrap">
  <span class="ey">Catálogo de plantillas</span>
  <h1>Páginas web para negocios de <em>todo Ecuador</em></h1>
