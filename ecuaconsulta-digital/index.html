@@ -168,6 +168,13 @@ footer a{color:#F4C430}
 .tarrow{display:grid;place-items:center;color:var(--pri)}.tarrow svg{width:34px;height:34px}
 .tsub{margin:64px auto 0}.tsub h3{font:700 26px var(--hf);margin:0 0 8px;color:var(--dark)}
 .steps.s4{grid-template-columns:repeat(4,1fr)}
+.ejg{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.ej{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;color:inherit;text-decoration:none;transition:transform .2s,box-shadow .2s}
+.ej:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(0,0,0,.1)}
+.ej figure{margin:0;aspect-ratio:16/10;overflow:hidden;background:var(--alt)}.ej img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+.ej>div{padding:16px 18px 18px;display:flex;flex-direction:column;gap:4px}
+.ejc{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}.ej b{font:700 17px var(--hf);color:var(--dark)}
+.ejl{display:inline-flex;align-items:center;gap:6px;font-weight:700;font-size:14px;color:var(--pri2);margin-top:6px}.ejl svg{width:16px;height:16px}
 .lgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 .li{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:20px 18px}
 .li i{width:44px;height:44px;flex:none;border-radius:12px;background:var(--alt);color:var(--pri2);display:grid;place-items:center}.li i svg{width:22px;height:22px}
@@ -178,7 +185,7 @@ footer a{color:#F4C430}
 .rem h3{font:700 26px var(--hf);margin:0 0 10px;color:#fff}.rem p{opacity:.82;margin:0 0 22px;line-height:1.6}
 .pills{display:flex;flex-wrap:wrap;gap:8px}.pills span{font-size:13px;padding:6px 12px;border-radius:999px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.14)}
 @media(max-width:1100px){
- .steps.s4{grid-template-columns:1fr 1fr}.lgrid{grid-template-columns:1fr 1fr}
+ .ejg{grid-template-columns:1fr 1fr}.steps.s4{grid-template-columns:1fr 1fr}.lgrid{grid-template-columns:1fr 1fr}
  .nav a.l{display:none}
  .g3{grid-template-columns:1fr 1fr}
  .split,.bk,.faqw,.cont{grid-template-columns:1fr;gap:40px}
@@ -198,7 +205,7 @@ footer a{color:#F4C430}
  .sec{padding:68px 0}
  .bens{margin-top:-46px}
  .g3,.g2,.tiles,.steps,.steps.s4,.fg{grid-template-columns:1fr}
- .tgrid{grid-template-columns:1fr}.lgrid{grid-template-columns:1fr 1fr;gap:10px}.li{flex-direction:column;gap:10px;padding:16px 14px}.li b{font-size:15px}.li small{font-size:12.5px}.tarrow{transform:rotate(90deg)}.tcol{padding:24px 22px}.rem{padding:34px 22px}
+ .ejg{grid-template-columns:1fr;gap:16px}.tgrid{grid-template-columns:1fr}.lgrid{grid-template-columns:1fr 1fr;gap:10px}.li{flex-direction:column;gap:10px;padding:16px 14px}.li b{font-size:15px}.li small{font-size:12.5px}.tarrow{transform:rotate(90deg)}.tcol{padding:24px 22px}.rem{padding:34px 22px}
  .menu{padding:28px 20px}
  .form{padding:24px 18px}
  .ci{padding:34px 22px}.map,.map iframe{min-height:300px}
@@ -208,12 +215,12 @@ footer a{color:#F4C430}
  .badge{left:14px;right:auto;bottom:-22px;max-width:calc(100% - 28px);padding:10px 16px;display:flex;align-items:baseline;gap:8px;border-radius:999px}
  .badge b{font-size:19px;white-space:nowrap}.badge small{font-size:12.5px;line-height:1.2}
 }
-.sec:not(.book) .eyebrow,.clink,.head a{color:#9A6F00!important}.nums b{color:#011F47}.step span{color:#9A6F00}</style>
+.sec:not(.book) .eyebrow,.clink,.head a,.ejl{color:#9A6F00!important}.nums b{color:#011F47}.step span{color:#9A6F00}</style>
 </head>
 <body>
 <header class="top" id="top"><div class="wrap">
  <a class="logo" href="#"><svg class="lg" viewBox="0 0 120 120" aria-hidden="true"><path d="M60 6a42 42 0 0 1 42 42c0 29-33 59-39.4 64.6a4 4 0 0 1-5.2 0C51 107 18 77 18 48A42 42 0 0 1 60 6Z" fill="#F4C430"/><circle cx="60" cy="48" r="29" fill="#FFFFFF"/><rect x="42" y="48" width="10" height="15" rx="2" fill="#011F47"/><rect x="55.5" y="41" width="10" height="22" rx="2" fill="#011F47"/><rect x="69" y="33" width="10" height="30" rx="2" fill="#011F47"/></svg><span><b>EcuaConsulta <span style='color:#F4C430'>Digital</span></b><small>Páginas web · Google Maps</small></span></a>
- <nav class="nav"><a class="l" href="#ofrecemos">Qué ofrecemos</a><a class="l" href="#beneficios">Beneficios</a><a class="l" href="#como-funciona">Cómo funciona</a><a class="l" href="#mas-servicios">Más servicios</a><a class="btn pri sm" href="#consulta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg><span>Consulta gratis</span></a></nav>
+ <nav class="nav"><a class="l" href="#ofrecemos">Qué ofrecemos</a><a class="l" href="#beneficios">Beneficios</a><a class="l" href="#como-funciona">Cómo funciona</a><a class="l" href="#ejemplos">Ejemplos</a><a class="btn pri sm" href="#consulta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg><span>Consulta gratis</span></a></nav>
 </div></header>
 
 <section class="hero"><div class="wrap"><div class="ht">
@@ -244,6 +251,12 @@ footer a{color:#F4C430}
  <div class="tiles"><figure class="tile"><img src="img/antes.webp" alt="Antes: solo te conocían los que pasaban por tu puerta" loading="lazy" width="1000" height="750"><figcaption>Antes: solo te conocían los que pasaban por tu puerta</figcaption></figure><figure class="tile"><img src="img/busqueda.webp" alt="Hoy: un cliente busca en Google y te encuentra" loading="lazy" width="1000" height="750"><figcaption>Hoy: un cliente busca en Google y te encuentra</figcaption></figure><figure class="tile"><img src="img/whatsapp.webp" alt="Te escribe por WhatsApp y hace su pedido" loading="lazy" width="1000" height="750"><figcaption>Te escribe por WhatsApp y hace su pedido</figcaption></figure><figure class="tile"><img src="img/lleno.webp" alt="Te visita, queda contento y te recomienda" loading="lazy" width="1000" height="750"><figcaption>Te visita, queda contento y te recomienda</figcaption></figure></div><div class="steps s4"><div class="step"><span>01</span><b>Nos escribes</b><small>Cuéntanos de tu negocio. La consulta es gratis.</small></div><div class="step"><span>02</span><b>Nos envías tus datos</b><small>Fotos, servicios, precios y horario.</small></div><div class="step"><span>03</span><b>Hacemos tu sitio</b><small>Te lo mostramos antes de publicarlo.</small></div><div class="step"><span>04</span><b>Optimizamos tu ficha</b><small>Ponemos tu sitio web en Google Maps.</small></div></div>
 </div></section>
 
+<section class="sec alt" id="ejemplos"><div class="wrap">
+ <div class="head c"><span class="eyebrow">Ejemplos</span><h2>Sitios web que ya hicimos</h2><p>Ábrelos desde tu celular: así se verá la página de tu negocio.</p></div>
+ <div class="ejg"><a class="ej" href="https://marceloalbanm13-source.github.io/ferreteria-demo/" target="_blank" rel="noopener"><figure><img src="img/ej-ferreteria.webp" alt="Ejemplo de página web: Ferretería" loading="lazy" width="720" height="450"></figure><div><span class="ejc">Cuenca</span><b>Ferretería</b><span class="ejl">Ver demo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div></a><a class="ej" href="https://marceloalbanm13-source.github.io/hotel-demo/" target="_blank" rel="noopener"><figure><img src="img/ej-hotel.webp" alt="Ejemplo de página web: Hotel boutique" loading="lazy" width="720" height="450"></figure><div><span class="ejc">Cuenca</span><b>Hotel boutique</b><span class="ejl">Ver demo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div></a><a class="ej" href="https://marceloalbanm13-source.github.io/plantillas/mariscos-esmeraldas/" target="_blank" rel="noopener"><figure><img src="img/ej-mariscos.webp" alt="Ejemplo de página web: Restaurante de mariscos" loading="lazy" width="720" height="450"></figure><div><span class="ejc">Esmeraldas</span><b>Restaurante de mariscos</b><span class="ejl">Ver demo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div></a><a class="ej" href="https://marceloalbanm13-source.github.io/plantillas/dental-zamora/" target="_blank" rel="noopener"><figure><img src="img/ej-dental.webp" alt="Ejemplo de página web: Clínica dental" loading="lazy" width="720" height="450"></figure><div><span class="ejc">Zamora</span><b>Clínica dental</b><span class="ejl">Ver demo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div></a><a class="ej" href="https://marceloalbanm13-source.github.io/plantillas/sombreros-azogues/" target="_blank" rel="noopener"><figure><img src="img/ej-sombreros.webp" alt="Ejemplo de página web: Sombreros de paja toquilla" loading="lazy" width="720" height="450"></figure><div><span class="ejc">Azogues</span><b>Sombreros de paja toquilla</b><span class="ejl">Ver demo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div></a><a class="ej" href="https://marceloalbanm13-source.github.io/plantillas/taller-macas/" target="_blank" rel="noopener"><figure><img src="img/ej-taller.webp" alt="Ejemplo de página web: Taller mecánico" loading="lazy" width="720" height="450"></figure><div><span class="ejc">Macas</span><b>Taller mecánico</b><span class="ejl">Ver demo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span></div></a></div>
+ <div class="ctas" style="justify-content:center;margin-top:34px"><a class="btn pri" href="https://marceloalbanm13-source.github.io/plantillas/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Ver catálogo completo</a></div>
+</div></section>
+
 <section class="sec " id="mas-servicios"><div class="wrap split">
  <div class="pic"><img src="img/asesoria.webp" alt="Asesoría digital por videollamada" loading="lazy" width="1000" height="750"></div>
  <div><span class="eyebrow">Soluciones digitales</span><h2>¿Tienes un proyecto más grande o necesitas soluciones digitales?</h2><p class="lead">También te ayudamos con lo que tu negocio necesite después de su sitio web.</p><ul class="checks"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Mantenimiento correctivo y preventivo de tu sitio web</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Mejor SEO para aparecer más arriba en Google</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Trámites digitales de las principales instituciones del país</li></ul><div class="ctas" style="margin-top:26px"><a class="btn pri" href="#consulta">Solicitar una consulta</a><a class="btn wa" href="#contacto" data-wa="Hola, tengo un proyecto y quisiera una consulta">Escríbenos</a></div></div>
@@ -264,8 +277,8 @@ footer a{color:#F4C430}
 </div></section>
 
 <section class="sec tight"><div class="wrap"><div class="resenas">
- <h2>Mira nuestro catálogo de plantillas</h2><p>Diseños listos para negocios de cada provincia. Escoge el que más te guste y lo adaptamos a tu marca.</p>
- <a class="btn light" href="https://marceloalbanm13-source.github.io/plantillas/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Ver catálogo</a>
+ <h2>¿Listo para que tus clientes te encuentren?</h2><p>La consulta es gratis y te damos el precio antes de empezar.</p>
+ <a class="btn light" href="#consulta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>Pedir consulta gratis</a>
 </div></div></section>
 
 <section class="sec tight" id="contacto"><div class="wrap"><div class="cont">
