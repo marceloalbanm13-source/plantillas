@@ -168,12 +168,17 @@ footer a{color:#FFB37A}
 .tarrow{display:grid;place-items:center;color:var(--pri)}.tarrow svg{width:34px;height:34px}
 .tsub{margin:64px auto 0}.tsub h3{font:700 26px var(--hf);margin:0 0 8px;color:var(--dark)}
 .steps.s4{grid-template-columns:repeat(4,1fr)}
+.lgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.li{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:20px 18px}
+.li i{width:44px;height:44px;flex:none;border-radius:12px;background:var(--alt);color:var(--pri2);display:grid;place-items:center}.li i svg{width:22px;height:22px}
+.li b{display:block;font:700 16px var(--hf);color:var(--dark);margin-bottom:3px}.li small{font-size:13.5px;color:var(--muted);line-height:1.45}
+.sec.alt .li{background:#fff}
 .rem{background:var(--dark);color:#fff;padding:50px 44px;display:flex;flex-direction:column;justify-content:center}
 .rem>i{width:58px;height:58px;border-radius:16px;background:rgba(255,255,255,.1);display:grid;place-items:center;color:#FFB37A;margin-bottom:20px}.rem>i svg{width:30px;height:30px}
 .rem h3{font:700 26px var(--hf);margin:0 0 10px;color:#fff}.rem p{opacity:.82;margin:0 0 22px;line-height:1.6}
 .pills{display:flex;flex-wrap:wrap;gap:8px}.pills span{font-size:13px;padding:6px 12px;border-radius:999px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.14)}
 @media(max-width:1100px){
- .steps.s4{grid-template-columns:1fr 1fr}
+ .steps.s4{grid-template-columns:1fr 1fr}.lgrid{grid-template-columns:1fr 1fr}
  .nav a.l{display:none}
  .g3{grid-template-columns:1fr 1fr}
  .split,.bk,.faqw,.cont{grid-template-columns:1fr;gap:40px}
@@ -193,7 +198,7 @@ footer a{color:#FFB37A}
  .sec{padding:68px 0}
  .bens{margin-top:-46px}
  .g3,.g2,.tiles,.steps,.steps.s4,.fg{grid-template-columns:1fr}
- .tgrid{grid-template-columns:1fr}.tarrow{transform:rotate(90deg)}.tcol{padding:24px 22px}.rem{padding:34px 22px}
+ .tgrid{grid-template-columns:1fr}.lgrid{grid-template-columns:1fr 1fr;gap:10px}.li{flex-direction:column;gap:10px;padding:16px 14px}.li b{font-size:15px}.li small{font-size:12.5px}.tarrow{transform:rotate(90deg)}.tcol{padding:24px 22px}.rem{padding:34px 22px}
  .menu{padding:28px 20px}
  .form{padding:24px 18px}
  .ci{padding:34px 22px}.map,.map iframe{min-height:300px}
